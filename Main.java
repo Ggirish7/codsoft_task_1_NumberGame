@@ -7,9 +7,11 @@ class Main {
     }
 
     public static void numberGame() {
+
         Random random = new Random();
         int number = random.nextInt(100);
         Scanner sc = new Scanner(System.in);
+
         while (true) {
             int guesses = 1;
             while (guesses < 6) {
@@ -33,12 +35,16 @@ class Main {
             if (guesses > 5) {
                 System.out.println("Sorry, you lost!\nThe number was " + number);
             }
+
             System.out.println("Would you like to play again ? (y/n) ");
             String answer = sc.next().toLowerCase();
+
             if (answer == "n") {
                 break;
             }
+
         }
+        
         sc.close();
     }
 
