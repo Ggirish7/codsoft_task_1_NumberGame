@@ -3,10 +3,6 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        numberGame();
-    }
-
-    public static void numberGame() {
 
         Random random = new Random();
         int number = random.nextInt(100);
@@ -36,16 +32,14 @@ class Main {
                 System.out.println("Sorry, you lost!\nThe number was " + number);
             }
 
-            System.out.println("Would you like to play again ? (y/n) ");
-            String answer = sc.next().toLowerCase();
+            System.out.println("Would you like to play again ? (y:1 /n:0) ");
+            int answer = sc.nextInt();
 
-            if (answer == "n") {
+            if (answer == 0)
                 break;
-            }
-
+                
         }
-        
+
         sc.close();
     }
-
 }
