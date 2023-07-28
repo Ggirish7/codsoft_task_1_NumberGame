@@ -1,5 +1,4 @@
-CodSoft Task 1
-Number Guessing Game
+#CodSoft Task 1: Number Guessing Game
 
 Problem Statement:
 1. Generate a random number within a specified range, such as 1 to 100.
